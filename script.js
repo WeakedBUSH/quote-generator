@@ -1,12 +1,17 @@
-
 // code that will make the app available in github server
-const express = require("express")
-const app = express()
+const express = require("express");
+const app = express();
 
-app.get("/", function(req,res){
-    res.send('CA MARCHEEEE!!!!')
-})
-app.listen(process.env.PORT || 5000);
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, ()=> {
+    console.log("listening on" + PORT);
+});
+
+app.get('/', (req, res)=>{
+    res.send({ok: true});
+});
+
 // all the constant we need
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
