@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/WeakedBUSH/quote-generator/issues"
   },
-  "homepage": "https://github.com/WeakedBUSH/quote-generator#readme"
+  "homepage": "https://github.com/WeakedBUSH/quote-generator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

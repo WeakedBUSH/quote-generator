@@ -1,4 +1,13 @@
 
+// code that will make the app available in github server
+const express = require("express")
+const app = express()
+
+app.get("/", function(res,req){
+    res.send('CA MARCHEEEE!!!!')
+})
+app.listen(process.env.PORT || 5000);
+// all the constant we need
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
