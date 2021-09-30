@@ -13,7 +13,7 @@ app.get('/', (req, res)=>{
 });
 
 // all the constant we need
-const quoteContainer = document.getElementById('quote-container');
+const quoteContainer=document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const TwitterBtn = document.getElementById('twitter');
