@@ -19,7 +19,7 @@ function complete(){
 // Get Quote From API
 async function getQuote(){
     loading();
-    const proxyUrl = 'https://protected-sea-48305.herokuapp.com'
+    const proxyUrl = 'https://git.heroku.com/protected-sea-48305.git'
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     try{
         const response = await fetch(proxyUrl + apiUrl);
