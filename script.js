@@ -1,5 +1,3 @@
-const port = process.env.PORT || 4000;
-app.listen(port);
 // all the constant we need
 
 const quoteContainer=document.getElementById('quote-container');
@@ -23,7 +21,7 @@ function complete(){
 // Get Quote From API
 async function getQuote(){
     loading();
-    const proxyUrl = 'https://sheltered-meadow-18015.herokuapp.com/'
+    const proxyUrl = 'https://nameless-tor-20682.herokuapp.com/'
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     try{
         const response = await fetch(proxyUrl + apiUrl);
