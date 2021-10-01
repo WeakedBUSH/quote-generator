@@ -1,4 +1,3 @@
-
 // all the constant we need
 
 const quoteContainer=document.getElementById('quote-container');
